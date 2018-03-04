@@ -1,0 +1,52 @@
+@(message: String,style: String = "scala")
+
+@defining(play.core.PlayVersion.current) { version =>
+
+<section id="top">
+  <div class="wrapper">
+    <h1><a href="https://playframework.com/documentation/@version/Home">@message</a></h1>
+  </div>
+</section>
+
+<div id="content" class="wrapper doc">
+
+        <!--Coupon start-->
+    <div class="coupon">
+        <img src="@routes.Assets.versioned("images/sushi.jpg")" class="photo photo1">
+        <div class="description">
+            <h1>Its Sushi Time!</h1>
+            <h2>Only for club members!</h2>
+            <p class="summary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad eum dolorum architecto obcaecati enim dicta praesentium, quam nobis! Neque ad aliquam facilis numquam. Veritatis, sit.</p>
+            <a href="#">Buy</a>
+        </div>
+    </div>
+        <!--Coupon End-->
+
+        <!--Coupon start-->
+    <div class="coupon">
+        <img src="@routes.Assets.versioned("images/funsun.jpg")" class="photo photo1">
+        <div class="description">
+            <h1>Fun in the sun</h1>
+            <h2>Time to get fun in the sun</h2>
+            <p class="summary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad eum dolorum architecto obcaecati enim dicta praesentium, quam nobis! Neque ad aliquam facilis numquam. Veritatis, sit.</p>
+            <a href="#">Buy</a>
+        </div>
+    </div>
+        <!--Coupon End-->
+
+        <!--Coupon start-->
+    <div class="coupon">
+        <img src="@routes.Assets.versioned("images/bag.png")" class="photo photo1">
+        <div class="description">
+            <h1>Need a new bag?</h1>
+            <h2>Only for smart student</h2>
+            <p class="summary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad eum dolorum architecto obcaecati enim dicta praesentium, quam nobis! Neque ad aliquam facilis numquam. Veritatis, sit.</p>
+            <a href="#">Buy</a>
+        </div>
+    </div>
+        <!--Coupon End-->
+
+
+
+</div>
+}
