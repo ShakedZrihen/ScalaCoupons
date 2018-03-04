@@ -1,0 +1,172 @@
+
+/*COUPON STYLES*/
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto:400,700);
+body {
+    background: #f1f1f1;
+    margin: 2rem;
+}
+
+.wrapper > h1 {
+    text-align: center;
+}
+
+.wrapper > h1 a {
+    font-family: 'Anton', sans-serif;
+    color: #75d13b;
+    text-decoration: none;
+    font-size: 200%;
+}
+
+.coupon {
+    height: 200px;
+    max-width: 600px;
+    transition: height 0.3s ease;
+    -webkit-transition: height 0.3s ease;
+    background: #fff;
+    border-radius: 3px;
+    -webkit-box-shadow: 0 3px 7px -3px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 3px 7px -3px rgba(0, 0, 0, 0.3);
+    margin: 0 auto 1.6%;
+    overflow: hidden;
+    position: relative;
+    font-size: 14px;
+    line-height: 1.45em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.coupon.alt .details {
+    right: -100%;
+    left: inherit;
+}
+.coupon .photo {
+    height: 200px;
+    position: relative;
+}
+.coupon .photo.photo1 {
+    background-size: cover;
+}
+.coupon .details {
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    background: rgba(0, 0, 0, 0.6);
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #fff;
+    font-family: "Open Sans";
+    list-style: none;
+    margin: 0;
+    padding: 10px 15px;
+    height: 200px;
+    /*POSITION*/
+    position: absolute;
+    top: 0;
+    left: -100%;
+}
+.coupon .description {
+    padding: 10px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    position: relative;
+    font-family: 'Lato', sans-serif;
+}
+.coupon .description h1 {
+    font-family: "Roboto";
+    line-height: 1em;
+    margin: 0 0 10px 0;
+}
+.coupon .description h2 {
+    color: #9b9b9b;
+    font-family: "Open Sans";
+    line-height: 1.2em;
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: 400;
+    margin: 1.2% 0;
+}
+.coupon .description p {
+    position: relative;
+    margin: 0;
+    padding-top: 20px;
+}
+.coupon .description p:after {
+    content: "";
+    background: #75d13b;
+    height: 6px;
+    width: 40px;
+    /*POSITION*/
+    position: absolute;
+    top: 6px;
+    left: 0;
+}
+.coupon .description a {
+    background-color: #75d13b;
+    margin-bottom: 10px;
+    height: 38px;
+    width: 77px;
+    float: right;
+    right: 14px;
+    top: -148px;
+    position: relative;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 150%;
+    text-align: center;
+    line-height: 38px;
+    font-family: 'Anton', sans-serif;
+}
+.coupon .description a:after {
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    content: "\f061";
+    font-family: FontAwesome;
+    margin-left: -10px;
+    opacity: 0;
+    vertical-align: middle;
+}
+
+.coupon.alt .details {
+    padding-left: 30px;
+}
+.coupon.alt .description {
+    float: right;
+}
+.coupon.alt .description:before {
+    -webkit-transform: skewX(5deg);
+    transform: skewX(5deg);
+    right: -15px;
+    left: inherit;
+}
+.coupon.alt .photo {
+    float: right;
+}
+.coupon .photo {
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    float: left;
+    height: 100%;
+    width: 40%;
+}
+.coupon .details {
+    width: 40%;
+}
+.coupon .description {
+    float: left;
+    width: 60%;
+    z-index: 0;
+}
+.coupon .description:before {
+    -webkit-transform: skewX(-5deg);
+    transform: skewX(-5deg);
+    content: "";
+    background: #fff;
+    width: 100%;
+    z-index: -1;
+    /*POSITION*/
+    position: absolute;
+    left: -15px;
+    top: 0;
+    bottom: 0;
+}
+
